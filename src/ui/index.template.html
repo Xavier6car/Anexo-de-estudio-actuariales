@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Anexo de JP y BD</title>
+<style>
+/*{{CSS}}*/
+</style>
+</head>
+<body>
+
+<div id="app">
+  <nav id="nav"></nav>
+  <div id="main">
+    <div id="barra"></div>
+    <div id="vista"></div>
+  </div>
+</div>
+<div id="modal"></div>
+
+<noscript>
+  <p style="padding:24px">Este programa necesita JavaScript habilitado. Todo el procesamiento ocurre
+  en su equipo; no se envia informacion a ningun servidor.</p>
+</noscript>
+
+<script>
+/*{{VENDOR}}*/
+</script>
+<script>
+/*{{APP}}*/
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  try {
+    APP.UI.iniciar();
+  } catch (e) {
+    document.body.innerHTML = '<pre style="padding:24px;color:#c8372d;white-space:pre-wrap">' +
+      'No se pudo iniciar el programa:\n\n' + (e && e.stack ? e.stack : e) + '</pre>';
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+# Archivos temporales de Windows / Office
+Thumbs.db
+desktop.ini
+~$*
+*.tmp
+
+# Datos reales de clientes: nunca deben llegar al repositorio
+/datos-reales/
+*.confidencial.xlsx
